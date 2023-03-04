@@ -1,6 +1,7 @@
 let posts= document.querySelector("#posts");
 let factoryMethod =document.querySelector('#factoryM');
 let factoryMethod2 =document.querySelector('#factoryM2');
+// let partyCandidate=document.querySelector('#')
 
 // Question One instalgram Constructor
 
@@ -68,7 +69,7 @@ let JambScore = function(Eng,Govt,Lit,Crk){
     return score
 
 }
- let score1 = JambScore(70,85,82,04)
+ let score1 = JambScore(70,85,82,94)
  factoryMethod2.innerHTML=score1.result();
 
  //QUESTION 4
@@ -90,4 +91,22 @@ let JambScore = function(Eng,Govt,Lit,Crk){
 // const copy3 = JSON.parse(JSON.stringify(data))
 // // 4
 // const copy4 = structuredClone(data)
+
+
+
+const presidentialCandidates = {
+     AAC: 'Omoyele Sowore',
+     ACCORD: 'Christopher Imumolen',
+     APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+}
+for (let party in presidentialCandidates) {
+    console.log(`${presidentialCandidates[party]} is the presidential candidate of ${party}`);
+  }
+  
+
+// Using any of the enumeration methods taught in class (for…in  or for..of), log out each of the presidential candidates in this format:
+// 	’Omoyele Sowore is the presidential candidate of AAC’
 
